@@ -138,12 +138,14 @@ end
 
 # Define your play method below
 def play(board)
-  counter = 0
-  until counter == 9
-    index = turn(board)
-  counter += 1
+  until over?(board)
+    turn(board)
+  end
+  if won?(board)
+    puts "Yay you won!"
+  elsif draw?(board)
+    puts "It is a draw!"
   end
 end
-  
   
 
