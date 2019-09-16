@@ -65,7 +65,7 @@ describe './lib/tic_tac_toe.rb' do
       allow($stdout).to receive(:puts)
       allow(self).to receive(:gets).and_return("1", "2", "3")
 
-      expect(self).to receive(:draw?).at_least(:twice).and_return(false, false, true)
+      expect(self).to receive(:draw?).at_least(:twice).and_return(false, false, true) #que?
 
       play(board)
     end
