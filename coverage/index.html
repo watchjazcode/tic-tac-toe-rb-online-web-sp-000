@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-09-16T21:52:14+00:00">2019-09-16T21:52:14+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-09-16T21:55:20+00:00">2019-09-16T21:55:20+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         50.7
+         51.8
        </span>
     </span> hits/line)
   </h2>
@@ -57,7 +57,7 @@
         <td>76</td>
         <td>75</td>
         <td>1</td>
-        <td>50.7</td>
+        <td>51.8</td>
       </tr>
       
     </tbody>
@@ -96,8 +96,8 @@
           <code class="ruby">def turn_count(board) #method that determines how many turns have been played</code>
         </li>
       
-        <li class="covered" data-hits="21" data-linenumber="2">
-          <span class="hits">21</span>
+        <li class="covered" data-hits="26" data-linenumber="2">
+          <span class="hits">26</span>
           
           <code class="ruby">  counter = 0 #starts at 0 and is how many turns have been played so far</code>
         </li>
@@ -114,20 +114,20 @@
           <code class="ruby">  #board = [&quot; &quot;, &quot; &quot;, &quot; &quot;, &quot; &quot;, &quot; &quot;, &quot; &quot;, &quot; &quot;, &quot; &quot;, &quot; &quot;]</code>
         </li>
       
-        <li class="covered" data-hits="21" data-linenumber="5">
-          <span class="hits">21</span>
+        <li class="covered" data-hits="26" data-linenumber="5">
+          <span class="hits">26</span>
           
           <code class="ruby">  board.each do |space| #checking each space individually</code>
         </li>
       
-        <li class="covered" data-hits="189" data-linenumber="6">
-          <span class="hits">189</span>
+        <li class="covered" data-hits="234" data-linenumber="6">
+          <span class="hits">234</span>
           
           <code class="ruby">    if space == &quot;X&quot; || space == &quot;O&quot;</code>
         </li>
       
-        <li class="covered" data-hits="31" data-linenumber="7">
-          <span class="hits">31</span>
+        <li class="covered" data-hits="48" data-linenumber="7">
+          <span class="hits">48</span>
           
           <code class="ruby">      counter += 1 #everytime we look at ea space, if taken we played one turn</code>
         </li>
@@ -144,8 +144,8 @@
           <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="21" data-linenumber="10">
-          <span class="hits">21</span>
+        <li class="covered" data-hits="26" data-linenumber="10">
+          <span class="hits">26</span>
           
           <code class="ruby">  return counter</code>
         </li>
@@ -174,8 +174,8 @@
           <code class="ruby">def current_player(board)</code>
         </li>
       
-        <li class="covered" data-hits="20" data-linenumber="15">
-          <span class="hits">20</span>
+        <li class="covered" data-hits="25" data-linenumber="15">
+          <span class="hits">25</span>
           
           <code class="ruby">  if turn_count(board).even?</code>
         </li>
@@ -192,8 +192,8 @@
           <code class="ruby">  else #if even returns X </code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="18">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="11" data-linenumber="18">
+          <span class="hits">11</span>
           
           <code class="ruby">    return &quot;O&quot;</code>
         </li>
@@ -957,7 +957,7 @@
         <li class="covered" data-hits="5" data-linenumber="145">
           <span class="hits">5</span>
           
-          <code class="ruby">    puts &quot;Yay you won!&quot;</code>
+          <code class="ruby">    puts &quot;Congratulations #{current_player(board)}!&quot;</code>
         </li>
       
         <li class="covered" data-hits="7" data-linenumber="146">
