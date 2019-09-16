@@ -143,8 +143,12 @@ def play(board)
   end
   if won?(board)
     winner_winner_chicken_dinner = won?(board)
-    character = board[winner_winner_chicken_dinner[0]]
-    puts "Congratulations #{character}!"
+    if winner_winner_chicken_dinner == true
+      puts "Congratulations"
+    else
+      character = board[winner_winner_chicken_dinner[0]]
+      puts "Congratulations #{character}!"
+    end
   elsif draw?(board)
     puts "Cat's Game!"
   end
