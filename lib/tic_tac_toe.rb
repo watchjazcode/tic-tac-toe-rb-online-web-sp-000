@@ -142,6 +142,8 @@ def play(board)
     turn(board)
   end
   if won?(board)
+    winner_winner_chicken_dinner = won?(board)
+    character = board[winner_winner_chicken_dinner]
     puts "Congratulations #{current_player(board)}!"
   elsif draw?(board)
     puts "Cat's Game!"
